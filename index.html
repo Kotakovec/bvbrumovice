@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking-like Web</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Rezervační systém</h1>
+    </header>
+
+    <div class="apartments">
+        <!-- Apartmán 1 -->
+        <div class="apartment" data-id="1">
+            <img src="https://via.placeholder.com/400x250" alt="Apartmán 1">
+            <h3>Luxusní apartmán</h3>
+            <p>1 500 Kč / noc</p>
+            <button class="book-btn">Rezervovat</button>
+            <div class="calendar-container" style="display:none;">
+                <input type="text" class="booking-date" placeholder="Vyberte termín...">
+                <button class="confirm-btn">Potvrdit rezervaci</button>
+            </div>
+        </div>
+
+        <!-- Apartmán 2 -->
+        <div class="apartment" data-id="2">
+            <img src="https://via.placeholder.com/400x250" alt="Apartmán 2">
+            <h3>Rodinný apartmán</h3>
+            <p>2 000 Kč / noc</p>
+            <button class="book-btn">Rezervovat</button>
+            <div class="calendar-container" style="display:none;">
+                <input type="text" class="booking-date" placeholder="Vyberte termín...">
+                <button class="confirm-btn">Potvrdit rezervaci</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="script.js"></script>
+</body>
+</html>
