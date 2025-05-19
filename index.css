@@ -73,13 +73,18 @@
 @media (max-width: 575px) {
   .u-section-1 .u-group-elements-1 {
     margin-top: 200px;
-    min-height: 147px;
+    min-height: 134px;
     width: auto;
   }
 
   .u-section-1 .u-text-1 {
-    width: auto;
     font-size: 1.875rem;
+    width: auto;
+<<<<<<< HEAD
+    line-height: 1.1;
+=======
+    font-size: 1.875rem;
+>>>>>>> e9775441caf71cfaaf604831c1b688350fa3d830
   }
 
   .u-section-1 .u-group-elements-2 {
