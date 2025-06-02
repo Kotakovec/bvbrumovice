@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Objednávka apartmánu</title>
+  <style>
+    * {
+      color: #fff;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      background-color: #010101;
+    }
+    form {
+      background: #111;
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 4px 12px rgba(255,255,255,0.1);
+    }
+    input, select {
+      width: 100%;
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #a72b31;
+      color: white;
+      padding: 0.75rem;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: all 0.5s ease;
+    }
+    button:hover {
+      background-color: #5a171a;
+      transition: all 0.5s ease;
+    }
+
+    input {
+      color: #000;
+    }
+
+    #response {
+      text-align: center;
+      margin-top: 1rem;
+    }
+  </style>
+  <link rel="stylesheet" href="flatpickr.css">
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+  <form id="orderForm">
+    <h2>Objednávka apartmánu</h2>
+    <input type="text" name="who" placeholder="Vaše jméno" required />
+    <input type="text" name="pokoj" placeholder="Číslo pokoje" required />
+    <input type="email" name="mail" placeholder="Email" />
+    <input type="date" name="datestart" placeholder="Datum příjezdu" />
+    <input type="date" name="dateend" placeholder="Datum odjezdu" />
+    <input type="email" name="to" placeholder="Komu se má objednávka poslat (email)" required />
+    <button type="submit">Odeslat objednávku</button>
+    <div id="response"></div>
+  </form>
+</body>
+<script>
+
+  flatpickr("input[type='date']", {
+    dateFormat: "d/m/Y",
+    locale: {
+      firstDayOfWeek: 1, // Monday is the first day of the week
+      weekdays: {
+        shorthand: ['Ne', 'Po', 'Út', 'St', 'Čt', 'Pá', 'So'],
+        longhand: ['Neděle', 'Pondělí', 'Úterý', 'Středa', 'Čtvrtek', 'Pátek', 'Sobota']
+      },
+      months: {
+        shorthand: ['Led', 'Úno', 'Bře', 'Dub', 'Kvě', 'Čvn', 'Čvc', 'Srp', 'Zář', 'Říj', 'Lis', 'Pro'],
+        longhand: ['Leden', 'Únor', 'Březen', 'Duben', 'Květen', 'Červenec', 'Srpen', 'Září', 'Říjen', 'Listopad', 'Prosinec']
+      }
+    }
+  });
+
+  const form = document.getElementById('orderForm');
+  const responseDiv = document.getElementById('response');
+
+  const formatCzechDate = (dateStr) => {
+    if (!dateStr) return '';
+    const months = [
+      'leden', 'únor', 'březen', 'duben', 'květen', 'červen',
+      'červenec', 'srpen', 'září', 'říjen', 'listopad', 'prosinec'
+    ];
+    const [day, month, year] = dateStr.split('/');
+    return `${parseInt(day)}. ${months[parseInt(month) - 1]} ${year}`;
+  };
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const formData = new FormData(form);
+    const params = new URLSearchParams();
+
+    for (const [key, value] of formData.entries()) {
+      if (key === 'datestart' || key === 'dateend') {
+        params.append(key, formatCzechDate(value));
+      } else {
+        params.append(key, value);
+      }
+    }
+
+    try {
+      const res = await fetch('http://node.jpman.eu:4990/order?usr=mailer&pwd=mailer&' + params.toString());
+      const data = await res.json();
+      responseDiv.textContent = `Stav: ${data.status}`;
+    } catch (error) {
+      responseDiv.textContent = 'Chyba při odesílání požadavku.';
+      console.error(error);
+    }
+  });
+</script>
+</html>

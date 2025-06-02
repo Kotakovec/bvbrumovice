@@ -1,0 +1,112 @@
+/* Dark Material Red Theme with Contrast Fixes */
+.flatpickr-calendar {
+  background: #1e1e1e;
+  border: 1px solid #5a171a;
+  color: #ffffff;
+}
+
+.flatpickr-months {
+  background: #a72b31; /* ← fixed */
+  color: #ffffff;
+  /*fill: #ffffff;*/
+  border-bottom: 1px solid #5a171a;
+}
+
+.flatpickr-months .flatpickr-prev-month,
+.flatpickr-months .flatpickr-next-month,
+.flatpickr-months .flatpickr-current-month {
+  color: #ffffff;
+  /*fill: #ffffff;*/
+}
+
+.flatpickr-monthDropdown-month {
+  background: #a72b31; /* ← fixed */
+  color: #ffffff;
+  /*fill: #ffffff;*/
+  /*border-bottom: 1px solid #5a171a;*/
+}
+
+
+.flatpickr-weekdays {
+  background: #2a2a2a;
+  color: #dddddd;
+}
+
+.flatpickr-weekday {
+  color: #dddddd;
+}
+
+.flatpickr-days {
+  background: #1e1e1e;
+}
+
+.flatpickr-day {
+  color: #eeeeee;
+  background: transparent;
+  border-radius: 4px;
+}
+
+.flatpickr-day:hover {
+  background: #5a171a;
+  color: white;
+}
+
+.flatpickr-day.today {
+  border: 1px solid #a72b31;
+  color: #a72b31;
+}
+
+.flatpickr-day.selected,
+.flatpickr-day.startRange,
+.flatpickr-day.endRange,
+.flatpickr-day.selected:focus,
+.flatpickr-day.selected:hover {
+  background: #a72b31;
+  color: white;
+}
+
+/* Previous/next month days */
+.flatpickr-day.prevMonthDay,
+.flatpickr-day.nextMonthDay {
+  color: #777777;
+}
+
+/* Disabled days */
+.flatpickr-day.disabled,
+.flatpickr-day.disabled:hover {
+  color: #555555;
+  background: transparent;
+  cursor: not-allowed;
+}
+
+/* Time Picker */
+.flatpickr-time input,
+.flatpickr-time .flatpickr-am-pm {
+  background: #1e1e1e;
+  border: 1px solid #5a171a;
+  color: white;
+}
+
+.flatpickr-time input:focus {
+  border-color: #a72b31;
+}
+
+/* Navigation Arrows */
+.flatpickr-prev-month,
+.flatpickr-next-month {
+  color: #ffffff;
+  fill: #ffffff; /* SVG fill */
+  transition: color 0.2s ease;
+}
+
+.flatpickr-prev-month:hover,
+.flatpickr-next-month:hover {
+  color: #a72b31;
+  fill: #a72b31;
+}
+
+/* Ensure SVG icons in buttons are visible */
+.flatpickr-prev-month svg,
+.flatpickr-next-month svg {
+  stroke: currentColor;
+}
