@@ -57,6 +57,7 @@
   <link rel="stylesheet" href="theme.css">
 </head>
 <body>
+  <button onclick="dropdown()">drop</button>
   <form id="orderForm" style="display: none;">
     <h2>Objednávka apartmánu</h2>
     <input type="text" name="who" placeholder="Vaše jméno" required />
@@ -68,11 +69,10 @@
     <button type="submit">Odeslat objednávku</button>
     <div id="response"></div>
   </form>
-  <button onclick="dropdown()">drop</button>
 </body>
 <script>
   function dropdown() {
-    if (document.getElementById('orderForm').getAttribute("style") === 'block') {
+    if (document.getElementById('orderForm').getAttribute("style") === 'display: block;') {
       document.getElementById('orderForm').setAttribute("style", "display: none;")
     } else {
       document.getElementById('orderForm').setAttribute("style", "display: block;")
