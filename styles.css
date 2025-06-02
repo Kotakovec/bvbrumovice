@@ -15,6 +15,10 @@ html, body {
 }
 body {
     background-image: var(--pozadi);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    
     color: #000;
     padding: 8px 16px;
     font-size: 12px;
