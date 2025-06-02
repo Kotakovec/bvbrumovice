@@ -1,5 +1,5 @@
 export default async function handler(req, res) {
-  const url = req.url.replace('/api/proxy/', '');
+  const url = req.url.replace('/api/proxy.js/', '');
 
   if (!url.startsWith('http://') && !url.startsWith('https://')) {
     return res.status(400).json({ error: 'URL must start with http:// or https://' });
