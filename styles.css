@@ -84,11 +84,11 @@ html, body {
 }
 .center.bottom {
     position: absolute;
-    bottom: -1.5rem;
+    bottom: -5%;
 }
 .center.top {
     position: absolute;
-    top: -1.5rem;
+    top: -5%;
 }
 .mainpagecontainer {
     display: inline-flex;
