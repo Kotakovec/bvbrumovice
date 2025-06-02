@@ -1,5 +1,6 @@
 :root {
-    --logo: url('/logo.png');
+    --logo: url('/images/logo.png');
+    --pozadi: url('/images/pozadi.jpg');
 }
 body {
     font-family: Arial, sans-serif;
@@ -12,16 +13,16 @@ html, body {
     padding: 0;
     height: 100%;
 }
-.rootelem {
-    background: #fff;
+body {
+    background-image: var(--pozadi);
     color: #000;
     padding: 8px 16px;
     font-size: 12px;
-    width: 97.5vw;
-    height: 96.6vh;
+    /*width: 97.5vw;
+    height: 96.6vh;*/
     display: flex;
     flex-direction: column;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+    /*clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);*/
     position: relative;
 }
 .shape-invert {
@@ -92,7 +93,7 @@ html, body {
 .center.top {
     position: absolute;
     top: -5%;
-    
+
     left:auto;
     right:auto;
 }
