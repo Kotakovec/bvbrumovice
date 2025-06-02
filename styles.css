@@ -101,7 +101,7 @@ html, body {
     width: 128px;
 
     overflow: hidden;
-    text-overflow: ellipsis;
+    /*text-overflow: ellipsis;*/
 
     margin-left: 100px;
     margin-right: 100px;
