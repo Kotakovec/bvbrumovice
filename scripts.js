@@ -1,4 +1,4 @@
-fetch("https://apartmanyukoleji.frdomains.site/paid.bool")
+fetch("https://apartmanyukoleji.vercel.app/paid.bool")
   .then(res => res.text())
   .then(paid => {
     if (paid.trim() === "false") {
@@ -26,10 +26,10 @@ fetch("https://apartmanyukoleji.frdomains.site/paid.bool")
 
 
 
-const logo = document.querySelector('.logo');
-const img = new Image();
-img.src = '/logo.png';
-img.onload = function () {
-  logo.style.width = img.width + 'px';
-  logo.style.height = img.height + 'px';
-};
+//const logo = document.querySelector('.logo');
+//const img = new Image();
+//img.src = '/logo.png';
+//img.onload = function () {
+//  logo.style.width = img.width + 'px';
+//  logo.style.height = img.height + 'px';
+//};
