@@ -1,0 +1,139 @@
+ .u-section-1 {
+  background-repeat: no-repeat;
+  background-image: url("images/Beznzvu-1.jpg");
+  background-size: cover;
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 100vh;
+}
+
+.u-section-1 .u-image-1 {
+  height: 196px;
+  margin-top: -1180px;
+  margin-bottom: 0;
+}
+
+.u-section-1 .u-group-elements-1 {
+  width: 467px;
+  min-height: 497px;
+  height: auto;
+  left: 904px;
+  top: 227px;
+  margin: -43px -232px 0 auto;
+}
+
+.u-section-1 .u-image-2 {
+  height: auto;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.u-section-1 .u-group-elements-2 {
+  width: 300px;
+  min-height: 95px;
+  margin: -497px auto 0;
+}
+
+.u-section-1 .u-shape-1 {
+  background-image: none;
+  --radius: 10px;
+}
+
+.u-section-1 .u-text-1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.u-section-1 .u-shape-2 {
+  width: 250px;
+  height: 156px;
+  margin: -424px -232px 0 auto;
+}
+
+.u-section-1 .u-shape-3 {
+  width: 570px;
+  height: 228px;
+  margin: 30px -232px 0 auto;
+}
+
+.u-section-1 .u-shape-4 {
+  width: 250px;
+  height: 156px;
+  margin: 30px -232px 0 auto;
+}
+
+.u-section-1 .u-image-3 {
+  height: 211px;
+  margin-top: 354px;
+  margin-bottom: 0;
+}
+
+.u-section-1 .u-image-4 {
+  width: 470px;
+  height: 470px;
+  margin: 82px -264px 0 auto;
+}
+
+.u-section-1 .u-image-5 {
+  width: 468px;
+  height: 470px;
+  margin: -470px auto 0;
+}
+
+.u-section-1 .u-image-6 {
+  width: 468px;
+  height: 470px;
+  margin: -470px auto 60px -262px;
+}
+
+@media (max-width: 1199px) {
+   .u-section-1 {
+    background-position: 50% 50%, 50% 50%;
+  }
+
+  .u-section-1 .u-group-elements-1 {
+    margin-top: -270px;
+  }
+
+  .u-section-1 .u-image-2 {
+    height: NaNpx;
+  }
+
+  .u-section-1 .u-shape-2 {
+    margin-top: -197px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-image-2 {
+    margin-top: 34px;
+  }
+
+  .u-section-1 .u-group-elements-2 {
+    height: auto;
+    margin-top: -391px;
+    margin-left: 29px;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin: 28px 0 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-text-1 {
+    font-size: 1.1111111111111112rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-image-5 {
+    width: 340px;
+    height: 341px;
+  }
+
+  .u-section-1 .u-image-6 {
+    margin-top: -341px;
+  }
+}
