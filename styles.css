@@ -85,10 +85,16 @@ html, body {
 .center.bottom {
     position: absolute;
     bottom: -5%;
+
+    left:auto;
+    right:auto;
 }
 .center.top {
     position: absolute;
     top: -5%;
+    
+    left:auto;
+    right:auto;
 }
 .mainpagecontainer {
     display: inline-flex;
@@ -105,7 +111,4 @@ html, body {
 
     margin-left: 50px;
     margin-right: 50px;
-
-    left:auto;
-    right:auto;
 }
