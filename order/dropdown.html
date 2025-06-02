@@ -126,7 +126,7 @@
     }
 
     try {
-      const res = await fetch('https://node.jpman.eu:4990/order?usr=mailer&pwd=mailer&' + params.toString());
+      const res = await fetch(`/httpproxy/`+encodeURIComponent("https://node.jpman.eu:4990/order?usr=mailer&pwd=mailer& + params.toString()"));
       const data = await res.json();
       responseDiv.textContent = `Stav: ${data.status}`;
     } catch (error) {
