@@ -43,7 +43,7 @@
 }
 
 .u-section-1 .u-btn-1 {
-  --radius: 0px;
+  --radius: 40px;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 1.25rem;
@@ -55,7 +55,7 @@
 }
 
 .u-section-1 .u-btn-2 {
-  --radius: 0px;
+  --radius: 40px;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 1.25rem;
@@ -67,7 +67,7 @@
 }
 
 .u-section-1 .u-btn-3 {
-  --radius: 0px;
+  --radius: 40px;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 1.25rem;
