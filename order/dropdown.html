@@ -86,11 +86,7 @@
 </body>
 <script>
   function dropdown() {
-    if (document.getElementById('orderForm').getAttribute("style") === 'display: block;') {
-      document.getElementById('orderForm').setAttribute("style", "display: none;")
-    } else {
-      document.getElementById('orderForm').setAttribute("style", "display: block;")
-    }
+    document.getElementById('orderForm').classList.toggle("show");
   }
 
 
