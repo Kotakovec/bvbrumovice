@@ -55,7 +55,7 @@
     #orderForm {
       transform: scale(0);
       transform-origin: top;
-      transition: transform 0.3s ease, opacity 0.3s ease;
+      transition: all 0.3s ease;
       opacity: 0;
       display: none;
     }
@@ -72,7 +72,7 @@
 </head>
 <body>
   <button onclick="dropdown()">drop</button>
-  <form id="orderForm" class="show">
+  <form id="orderForm">
     <h2>Objednávka apartmánu</h2>
     <input type="text" name="who" placeholder="Vaše jméno" required />
     <input type="text" name="pokoj" placeholder="Číslo pokoje" required />
