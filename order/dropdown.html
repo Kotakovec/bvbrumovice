@@ -57,13 +57,11 @@
       transform-origin: top;
       transition: all 0.3s ease;
       opacity: 0;
-      display: none;
     }
 
     #orderForm.show {
       transform: scale(1);
       opacity: 1;
-      display: block;
     }
   </style>
   <link rel="stylesheet" href="flatpickr.css">
@@ -86,7 +84,20 @@
 </body>
 <script>
   function dropdown() {
-    document.getElementById('orderForm').classList.toggle("show");
+    const form = document.getElementById('orderForm');
+
+    if (form.classList.contains("show")) {
+      form.classList.remove("show");
+      // After transition ends, hide from layout
+      setTimeout(() => {
+        form.style.display = "none";
+      }, 300); // Must match your transition duration
+    } else {
+      form.style.display = "block"; // Make it render first
+      // Force reflow to ensure transition happens
+      void form.offsetWidth;
+      form.classList.add("show");
+    }
   }
 
 
