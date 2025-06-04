@@ -53,9 +53,17 @@
     }
 
     #orderForm {
-      transform: scale(1);
+      transform: scale(0);
       transform-origin: top;
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      opacity: 0;
+      display: none;
+    }
+
+    #orderForm.show {
+      transform: scale(1);
+      opacity: 1;
+      display: block;
     }
   </style>
   <link rel="stylesheet" href="flatpickr.css">
