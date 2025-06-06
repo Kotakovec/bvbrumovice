@@ -69,7 +69,7 @@ body {
     text-align: center;
 }
 .logo {
-    background-image: url('/logo.png');
+    background-image: var(--logo);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
