@@ -16,8 +16,9 @@ html, body {
 body {
     background-image: var(--pozadi);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
+    overflow: hidden;
 
     color: #000;
     padding: 8px 16px;
