@@ -121,5 +121,6 @@ body {
     margin-right: 50px;
 }
 .sample-img {
-    size:contain;
+    max-height: 100%;
+    max-width: 100%;
 }
