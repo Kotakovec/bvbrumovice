@@ -40,7 +40,7 @@ body {
     font-size: 12px;
     display: inline-block;
     font-weight: bold;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
     line-height: 1.2;
 
     width: 191px;
@@ -53,7 +53,7 @@ body {
     padding: 8px 16px;
     font-size: 12px;
     display: inline-block;
-    clip-path: polygon(0 0, 100% 5px, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
     line-height: 1.2;
 
     width: 191px;
@@ -67,6 +67,7 @@ body {
     transform: translate(-50%, -50%);
     align-items: center;
     text-align: center;
+    transform: scale(110%);
 }
 .logo {
     background-image: url('/logo.png');
