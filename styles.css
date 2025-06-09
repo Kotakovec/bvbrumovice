@@ -93,14 +93,14 @@ body {
 }
 .center.bottom {
     position: absolute;
-    bottom: -5%;
+    bottom: -35%;
 
     left:auto;
     right:auto;
 }
 .center.top {
     position: absolute;
-    top: -5%;
+    top: -35%;
 
     left:auto;
     right:auto;
