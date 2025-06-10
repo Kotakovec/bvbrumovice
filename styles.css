@@ -28,7 +28,7 @@ body {
     flex-direction: column;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
     position: relative;
-    opacity: 50%;
+    /*opacity: 50%;*/
 
     /*height: 100%;
     width: 100%;*/
