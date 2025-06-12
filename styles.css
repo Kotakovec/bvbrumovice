@@ -173,33 +173,33 @@ body {
     font-size: 11px;
   }
 }
-
 @media (max-width: 600px) {
   body {
-    padding: 20px;
-    font-size: 10px;
+    padding: 16px;
+    font-size: 14px;
   }
 
   .main {
-    transform: scale(90%) translate(-50%, -50%);
+    transform: scale(100%) translate(-50%, -50%);
+    width: 100%;
   }
 
   .top-inner {
-    transform: scale(0.5);
+    transform: scale(0.8);
     transform-origin: top center;
   }
 
   .header {
-    top: 5px;
-    font-size: 14px;
+    top: 10px;
+    font-size: 16px;
   }
 
   .mainpagecontainer {
-    width: 96px;
-    height: 96px;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 0 10px;
+    width: 100%;
+    max-width: 320px;
+    margin: 16px auto;
+    height: auto;
+    padding: 0 8px;
     box-sizing: border-box;
   }
 
@@ -207,17 +207,18 @@ body {
     width: 100%;
     height: auto;
     object-fit: contain;
+    border-radius: 6px;
   }
 
   .shape,
   .shape-invert {
-    width: 120px;
-    font-size: 10px;
-    padding: 6px 12px;
-    clip-path: none;
+    width: 100%;
+    font-size: 14px;
+    padding: 10px 14px;
     text-align: center;
-    line-height: 1.1;
-    max-width: 90vw;
+    line-height: 1.4;
+    clip-path: none;
+    border-radius: 4px;
   }
 
   .center.top,
