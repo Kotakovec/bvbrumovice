@@ -13,6 +13,9 @@ html, body {
     padding: 0;
     height: 100%;
 }
+.rootelem {
+    height: 100%;
+}
 body {
     background-image: var(--pozadi);
     background-repeat: no-repeat;
