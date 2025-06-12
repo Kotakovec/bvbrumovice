@@ -178,39 +178,46 @@ body {
   body {
     padding: 20px;
     font-size: 10px;
+    display: block;
   }
 
   .main {
-    transform: scale(90%) translate(-50%, -50%);
-  }
-
-  .top-inner {
-    transform: scale(0.5);
+    position: static;
+    transform: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .mainpagecontainer {
-    width: 96px;
-    height: 96px;
-    margin-left: 10px;
-    margin-right: 10px;
+    width: auto;
+    height: auto;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: visible;
   }
 
-  .header {
-    top: 5px;
-    font-size: 14px;
-  }
-
-  .shape, .shape-invert {
-    width: 120px;
-    font-size: 10px;
-    padding: 6px 12px;
-  }
-
-  .center.top {
-    top: -10px;
-  }
-
+  .center.top,
   .center.bottom {
-    bottom: -10px;
+    position: static;
+    margin: 8px 0;
+  }
+
+  .shape,
+  .shape-invert {
+    width: auto;
+    max-width: 90vw;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .sample-img {
+    width: 100%;
+    height: auto;
+    max-width: 320px;
+    object-fit: cover;
+    margin: 4px 0;
   }
 }
