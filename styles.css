@@ -19,14 +19,14 @@ html, body {
 }
 .rootelem {
   position: relative;
-  color: white;
+  color: black;
   z-index: 1;
 }
 .rootelem::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: black;
+  background-color: white;
   opacity: 0.5;
   z-index: -1;
 }
