@@ -174,12 +174,6 @@ body {
   }
 }
 @media (max-width: 600px) {
-  body {
-    padding: 6px;
-    font-size: 13px;
-    background: #fff;
-  }
-
   .header {
     font-size: 15px;
     text-align: center;
