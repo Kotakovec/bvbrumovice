@@ -16,7 +16,19 @@ html, body {
 .rootelem {
     height: 100%;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
-    opacity: 50%
+}
+.rootelem {
+  position: relative;
+  color: white;
+  z-index: 1;
+}
+.rootelem::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: black;
+  opacity: 0.5;
+  z-index: -1;
 }
 body {
     background-image: var(--pozadi);
