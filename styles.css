@@ -175,29 +175,30 @@ body {
 }
 
 @media (max-width: 600px) {
-  .header .top-inner {
-    transform: scale(0.6);
-    transform-origin: top center;
+  body {
+    padding: 20px;
+    font-size: 10px;
   }
 
   .main {
     transform: scale(90%) translate(-50%, -50%);
   }
 
-  .shape,
-  .shape-invert {
-    font-size: 10px;
-    padding: 6px 12px;
-    clip-path: none;
-    width: auto;
-    max-width: 90vw;
-    text-align: center;
-    line-height: 1.1;
+  .top-inner {
+    transform: scale(0.5);
+    transform-origin: top center;
+  }
+
+  .header {
+    top: 5px;
+    font-size: 14px;
   }
 
   .mainpagecontainer {
-    margin: 16px 0;
-    width: 100%;
+    width: 96px;
+    height: 96px;
+    margin-left: 10px;
+    margin-right: 10px;
     padding: 0 10px;
     box-sizing: border-box;
   }
@@ -206,6 +207,17 @@ body {
     width: 100%;
     height: auto;
     object-fit: contain;
+  }
+
+  .shape,
+  .shape-invert {
+    width: 120px;
+    font-size: 10px;
+    padding: 6px 12px;
+    clip-path: none;
+    text-align: center;
+    line-height: 1.1;
+    max-width: 90vw;
   }
 
   .center.top,
