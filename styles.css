@@ -15,6 +15,8 @@ html, body {
 }
 .rootelem {
     height: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+    opacity: 50%
 }
 body {
     background-image: var(--pozadi);
@@ -29,7 +31,6 @@ body {
     height: 96.6vh;*/
     display: flex;
     flex-direction: column;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
     position: relative;
     /*opacity: 50%;*/
 
