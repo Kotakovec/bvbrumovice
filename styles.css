@@ -181,16 +181,42 @@ body {
     display: block;
   }
 
+  .rootelem {
+    clip-path: none;
+  }
+
   .main {
     position: static;
     transform: none;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+  }
+
+  .header {
+    position: static;
+    margin-bottom: 20px;
+    transform: none;
+  }
+
+  .logo {
+    width: 200px;
+    height: auto;
+    aspect-ratio: 2 / 1;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+  }
+
+  .top-inner {
+    transform: scale(1);
   }
 
   .mainpagecontainer {
-    width: auto;
+    width: 90%;
+    max-width: 400px;
     height: auto;
     margin: 20px 0;
     display: flex;
@@ -208,15 +234,27 @@ body {
   .shape,
   .shape-invert {
     width: auto;
-    max-width: 90vw;
+    max-width: 90%;
     font-size: 12px;
     text-align: center;
+    clip-path: none;
+    padding: 10px;
+    border-radius: 6px;
+  }
+
+  .shape-invert {
+    background: #fff;
+    color: #c41e3a;
+  }
+
+  .shape {
+    background: #c41e3a;
+    color: #fff;
   }
 
   .sample-img {
     width: 100%;
     height: auto;
-    max-width: 320px;
     object-fit: cover;
     margin: 4px 0;
   }
