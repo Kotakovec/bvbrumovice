@@ -176,28 +176,36 @@ body {
 @media (max-width: 600px) {
   body {
     padding: 12px;
-    font-size: 12px;
+    font-size: 14px; /* Slightly larger for readability */
   }
 
   .main {
-    transform: scale(95%) translate(-50%, -50%);
     width: 100%;
+    max-width: 100vw;
+    margin: 0 auto;
+    /* Removed transform to prevent layout bugs */
   }
 
   .top-inner {
-    transform: scale(0.65);
-    transform-origin: top center;
+    transform: none; /* Removed scaling, keeps layout consistent */
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
   }
 
   .header {
-    top: 8px;
-    font-size: 15px;
+    top: 0;
+    font-size: 18px;
+    padding: 8px 0;
+    text-align: center;
   }
 
   .mainpagecontainer {
-    width: 240px;
-    height: auto;
-    margin: 12px auto;
+    width: 100%;
+    max-width: 320px;
+    margin: 16px auto;
+    padding: 0 6px;
+    box-sizing: border-box;
   }
 
   .sample-img {
@@ -205,25 +213,30 @@ body {
     height: auto;
     object-fit: contain;
     border-radius: 4px;
+    display: block;
+    margin: 0 auto;
   }
 
   .shape,
   .shape-invert {
     width: 100%;
-    font-size: 12px;
-    padding: 8px 12px;
+    font-size: 13px;
+    padding: 10px 8px;
     text-align: center;
-    line-height: 1.3;
-    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%); /* keeps shape but gentle */
+    line-height: 1.4;
+    box-sizing: border-box;
+    /* Gentle clipping for mobile */
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
   }
 
   .shape-invert {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   }
 
   .center.top,
   .center.bottom {
     position: static;
-    margin: 6px 0;
+    margin: 10px 0;
+    text-align: center;
   }
 }
