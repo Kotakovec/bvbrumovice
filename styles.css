@@ -13,23 +13,7 @@ html, body {
     padding: 0;
     height: 100%;
 }
-.rootelem {
-    height: 100%;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
-}
-.rootelem {
-  position: relative;
-  color: black;
-  z-index: 1;
-}
-.rootelem::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: white;
-  opacity: 0.5;
-  z-index: -1;
-}
+
 body {
     background-image: var(--pozadi);
     background-repeat: no-repeat;
@@ -37,7 +21,8 @@ body {
     background-position: center;
 
     color: #000;
-    padding: 8px 16px;
+    /*padding: 8px 16px;*/
+    margin: 0;
     font-size: 12px;
     /*width: 97.5vw;
     height: 96.6vh;*/
