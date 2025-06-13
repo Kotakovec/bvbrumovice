@@ -119,6 +119,21 @@ charakter, v patře se nachází 1 velká ložnice, kde najdete 3 manželské po
 V přízemí velká kuchyně s kávovarem, velkou lednicí, kožená sedačka s druhou televizí.
 Součástí koupelny je i pračka a fén.
   </p>
+  <br><br>
+  <p>
+<h1>Ceník</h1>
+Apartmán A - 3 000 Kč / noc
+<br>
+Apartmán B - 3 000 Kč / noc
+<br>
+Apartmán C - 3 200 Kč / noc
+<br>
+Apartmán D - 2 800 Kč / noc
+<br>
+Apartmán E - 3 000 Kč / noc
+<br><br>
+<strong>Apartmánový dům lze pronajmout i celý za cenu 13 000 Kč / noc</strong>
+  </p>
   `
   showPopup(nhhtlm);
 }
