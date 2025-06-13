@@ -122,6 +122,55 @@ Součástí koupelny je i pračka a fén.
   `
   showPopup(nhhtlm);
 }
+function vyletyClick() {
+  const hetemelmel = `
+  <p>
+<h1>Výlety po okolí</h1>
+<br>
+Větrný mlýn v Kloboukách - <strong>2,6 km</strong>
+<br>
+Městské Muzeum v Kloboukách - <strong>2,3 km</strong>
+<br>
+Muzeum generálporučíka Františka Peřiny - <strong>5 km</strong>
+<br>
+Cyklostezka Násedlovice - <strong>7 km</strong>
+<br>
+Rozhledna Nedánov Boleradice - <strong>6,5 km</strong>
+<br>
+Památník bratří Mrštíků v Divákách - <strong>9 km</strong>
+<br>
+Papouščí zoo Bošovice - <strong>11 km</strong>
+<br>
+Ovčí terasy v Němčičkách - <strong>12 km</strong>
+<br>
+Rozhledna Kobylí - <strong>13 km</strong>
+<br>
+Rozhledna Kraví hora - <strong>13 km</strong>
+<br>
+Rozhledna Velké Pavlovice - <strong>17 km</strong>
+<br>
+Mandloňová stezka Hustopeče - <strong>18 km</strong>
+<br>
+Zámek Slavkov u Brna, bitva u Slavkova - <strong>25 km</strong>
+<br>
+Pálava - <strong>33 km</strong>
+<br>
+Vodní nádrž Nové Mlýny - <strong>30 km</strong>
+<br>
+Zoo Hodonín - <strong>30 km</strong>
+<br>
+Lednicko-valtický areál - <strong>37 km</strong>
+<br>
+Památky v Brně - <strong>35 km</strong>
+<br>
+Zoo Brno - <strong>40 km</strong>
+<br>
+Pasohlávky Aqualand Moravia - <strong>36 m</strong>
+<br>
+Zámek Mikulov - <strong>46 km</strong>
+  </p>
+  `;
+}
 
 function showPopup(text) {
   document.getElementById('popup').style.display = 'flex';
