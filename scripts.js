@@ -170,6 +170,7 @@ Pasohlávky Aqualand Moravia - <strong>36 m</strong>
 Zámek Mikulov - <strong>46 km</strong>
   </p>
   `;
+  showPopup(hetemelmel)
 }
 
 function showPopup(text) {
