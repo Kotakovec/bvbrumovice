@@ -77,6 +77,49 @@ Mapa: <a href="https://mapy.com/s/fuzumapaze">https://mapy.com/s/fuzumapaze</a>
   `;
   showPopup(html)
 }
+function apartmanyClick() {
+  const nhhtlm = `
+  <p>
+<h1>Apartmány</h1>
+<h2>Apartmán A pro 6 osob</h2>
+<br>
+Jedná se o patrový apartmán o velikosti 65 m2. V přízemí najdete rozkládací pohovku s
+TV, plně vybavenou kuchyň s velkou lednicí a kávovarem a prostornou koupelnu, včetně
+fénu. V patře se nachází 3 samostatné postele, 1 manželská postel. Před apartmánem
+se nachází terasa s posezením.
+<br>
+<h2>Apartmán B pro 6 osob</h2>
+<br>
+Jedná se o patrový apartmán o velikosti 65 m2. V přízemí najdete rozkládací pohovku s
+TV, plně vybavenou kuchyň s velkou lednicí a kávovarem a prostornou koupelnu, včetně
+fénu. V patře se nachází 3 samostatné postele, 1 manželská postel. Před apartmánem
+se nachází terasa s posezením.
+<br>
+<h2>Apartmán C pro 6 osob</h2>
+<br>
+Apartmán je přízemní o velikosti 70 m2. V ložnici se nachází dvě manželské postele,
+v obývacím pokoji najdete velkou rohovou rozkládací koženou sedačku pro 2 osoby, TV,
+pro sportovce i orbitrek. Dále je součástí apartmánu plně vybavená kuchyň s myčkou,
+velkou lednicí a kávovarem. Prostorná koupelna je vybavena sprchovým koutem i vanou,
+včetně fénu.
+<br>
+<h2>Apartmán D pro 5 osob</h2>
+<br>
+Apartmán se nachází po schodech v podkroví o velikosti 56 m2. V ložnici najdete
+manželskou postel. Obývací pokoj je propojen s druhou ložnicí, kde je také manželská
+postel, dále rozkládací pohovka s TV a prostorná plně vybavená kuchyně s velkou lednicí
+a kávovarem. Podkrovní koupelna má sprchový kout, součástí také fén.
+<br>
+<h2>Apartmán E pro 6 osob</h2>
+<br>
+Tento apartmán se nachází samostatně v areálu. Velikost je 69 m2. Má opět patrový
+charakter, v patře se nachází 1 velká ložnice, kde najdete 3 manželské postele a televizi.
+V přízemí velká kuchyně s kávovarem, velkou lednicí, kožená sedačka s druhou televizí.
+Součástí koupelny je i pračka a fén.
+  </p>
+  `
+  showPopup(nhhtlm);
+}
 
 function showPopup(text) {
   document.getElementById('popup').style.display = 'flex';
