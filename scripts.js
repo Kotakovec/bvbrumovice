@@ -35,5 +35,35 @@ img.onload = function () {
 };
 
 function rsrv_click() {
-  
+
+}
+function contactclick() {
+  const html = `
+  <p>
+Apartmány u kolejí
+<br>
+Nádražní 502/86
+<br>
+691 72 Klobouky u Brna
+<br>
++420 739 047 640
+<br>
+Email: bude
+<br>
+WWW / Webové stránky: bude
+<br>
+GPS: 48.9931569N, 16.8867883E
+<br>
+Mapa: <a href="https://mapy.com/s/fuzumapaze">https://mapy.com/s/fuzumapaze</a>
+  </p>
+  `;
+  showPopup(html)
+}
+
+function showPopup(text) {
+  document.getElementById('popup').style.display = 'flex';
+  document.getElementById('puc').innerHTML = text;
+}
+function hidePopup() {
+  document.getElementById('popup').style.display = 'none';
 }
