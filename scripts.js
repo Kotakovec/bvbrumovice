@@ -33,3 +33,7 @@ img.onload = function () {
   logo.style.width = img.width + 'px';
   logo.style.height = img.height + 'px';
 };
+
+function rsrv_click() {
+  
+}
