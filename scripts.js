@@ -45,6 +45,7 @@ function rsrv_click() {
 function uvodClick() {
   const html = `
   <p>
+<h1>Úvod</h1>
 Apartmány u kolejí nabízí ubytování v nově zrekonstruované budově bývalého vlakového nádraží, v klidné části Klobouk u Brna, v srdci Jižní Moravy na hlavní trase Brno-Hodonín.
 <br>
 Budova disponuje 5 samostatnými apartmány, plně vybavené a o celkové kapacitě až 29 lůžek.
@@ -58,6 +59,7 @@ V okolí je možnost cykloturistiky, navštívit vinné stezky, vinné sklepy a 
 function contactclick() {
   const html = `
   <p>
+<h1>Kontakt</h1>
 Apartmány u kolejí
 <br>
 Nádražní 502/86
