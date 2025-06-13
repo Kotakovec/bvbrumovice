@@ -60,7 +60,7 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
     line-height: 1.2;
 
-    width: 191px;
+    width: 100px;
     height: auto;
     text-overflow: ellipsis;
 }
@@ -73,7 +73,7 @@ body {
     clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
     line-height: 1.2;
 
-    width: 191px;
+    width: 100px;
     height: auto;
     text-overflow: ellipsis;
 }
@@ -129,8 +129,8 @@ body {
     align-items: center;
     justify-content: center;
 
-    height: 128px;
-    width: 128px;
+    height: 215px;
+    width: 215px;
 
     overflow: hidden;
     text-overflow: ellipsis;
@@ -139,8 +139,6 @@ body {
     margin-right: 50px;
 }
 .sample-img {
-    height: 128px;
-    width: 128px;
     max-height: 100%;
     max-width: 100%;
 }
