@@ -110,14 +110,14 @@ body {
 }
 .center.bottom {
     position: absolute;
-    bottom: -35%;
+    bottom: 0;
 
     left:auto;
     right:auto;
 }
 .center.top {
     position: absolute;
-    top: -35%;
+    top: 0;
 
     left:auto;
     right:auto;
@@ -143,78 +143,4 @@ body {
     width: 128px;
     max-height: 100%;
     max-width: 100%;
-}
-@media (max-width: 992px) {
-  .main {
-    transform: scale(100%) translate(-50%, -50%);
-  }
-
-  .top-inner {
-    transform: scale(0.7);
-  }
-
-  .mainpagecontainer {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  .header {
-    top: 10px;
-  }
-
-  .center.top {
-    top: -20px;
-  }
-
-  .center.bottom {
-    bottom: -20px;
-  }
-
-  .shape, .shape-invert {
-    width: 150px;
-    font-size: 11px;
-  }
-}
-@media (max-width: 600px) {
-  .header {
-    font-size: 15px;
-    text-align: center;
-    padding: 5px 0;
-  }
-
-  .top-inner,
-  .mainlogo {
-    width: 100%;
-    max-width: 100vw;
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  .mainpagecontainer {
-    width: 96%;
-    max-width: 340px;
-    margin: 10px auto;
-    padding: 0 2px;
-    box-sizing: border-box;
-  }
-
-  .center.top,
-  .center.bottom {
-    position: static;
-    margin: 6px 0;
-    text-align: center;
-  }
-
-  /* Optional: Make images smaller for very small phones */
-  @media (max-width: 375px) {
-    .mainpagecontainer {
-      max-width: 98vw;
-    }
-    .shape,
-    .shape-invert {
-      font-size: 12px;
-      padding: 5px 2px;
-    }
-  }
 }
