@@ -186,3 +186,7 @@ body {
   font-size: 18px;
   cursor: pointer;
 }
+
+.rstclr {
+  color: revert;
+}
