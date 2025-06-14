@@ -54,6 +54,7 @@ function rsrv_click() {
       <div id="response"></div>
     </form>
   </p>
+  <script src="/js/order.js"></script>
   `;
   showPopup(htmjtlm);
 }
