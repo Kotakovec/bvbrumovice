@@ -40,7 +40,22 @@ if (window.innerWidth < 600) {
 
 
 function rsrv_click() {
-
+  const htmjtlm = `
+  <p>
+    <form id="orderForm">
+      <h2>Objednávka apartmánu</h2>
+      <input type="text" name="who" placeholder="Vaše jméno" required />
+      <input type="text" name="pokoj" placeholder="Apartmán (A, B, C, D, E)" maxlength="1" pattern="[A-Ea-e]" required />
+      <input type="email" name="mail" placeholder="Email" />
+      <input type="date" name="datestart" placeholder="Datum příjezdu" />
+      <input type="date" name="dateend" placeholder="Datum odjezdu" />
+      <textarea type="text" name="zprava" placeholder="Dodatečná zpráva" height="128" width="128" />
+      <button type="submit">Odeslat objednávku</button>
+      <div id="response"></div>
+    </form>
+  </p>
+  `;
+  showPopup(htmjtlm);
 }
 function uvodClick() {
   const html = `
