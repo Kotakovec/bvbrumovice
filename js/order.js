@@ -35,7 +35,7 @@ form.addEventListener('submit', async (e) => {
     }
   }
   try {
-    const res = await fetch(`/api/proxy.js/`+encodeURIComponent("https://aukapi.onrender.com/order?usr=mailer&pwd=mailer&to=" + params.toString()));
+    const res = await fetch("https://aukapi.onrender.com/order?usr=mailer&pwd=mailer&to=mrtomicz@email.cz&" + params.toString());
     const data = await res.json();
     //responseDiv.textContent = `Stav: ${data.status}`;
   } catch (error) {
