@@ -49,7 +49,7 @@ function rsrv_click() {
       <input type="email" name="mail" placeholder="Email" />
       <input type="date" name="datestart" placeholder="Datum příjezdu" />
       <input type="date" name="dateend" placeholder="Datum odjezdu" />
-      <textarea type="text" name="zprava" placeholder="Dodatečná zpráva" height="128" width="128" />
+      <textarea type="text" name="zprava" placeholder="Dodatečná zpráva" height="128" width="128"></textarea>
       <button type="submit">Odeslat objednávku</button>
       <div id="response"></div>
     </form>
