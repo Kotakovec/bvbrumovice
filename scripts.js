@@ -50,7 +50,7 @@ Apartmány u kolejí nabízí ubytování v nově zrekonstruované budově býva
 <br>
 Budova disponuje 5 samostatnými apartmány, plně vybavené a o celkové kapacitě až 29 lůžek.
 <br>
-Parkování pro návštěvníky vareálu, možnost uskladnění kol, posezení na terase, či v pergole u grilu. Pro děti jsou připraveny průlezky, pískoviště a velká zahrada.
+Parkování pro návštěvníky v areálu, možnost uskladnění kol, posezení na terase, či v pergole u grilu. Pro děti jsou připraveny průlezky, pískoviště a velká zahrada.
 <br>
 V okolí je možnost cykloturistiky, navštívit vinné stezky, vinné sklepy a další krásy Jižní Moravy.
   `;
