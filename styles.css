@@ -194,3 +194,9 @@ body {
 .rstclr {
   color: revert;
 }
+@media (max-width: 600px) {
+  .mainpagecontainer::after {
+    content: "\A\A\A\A"; /* newline */
+    white-space: pre;
+  }
+}
