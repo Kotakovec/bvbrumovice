@@ -86,6 +86,7 @@ body {
     transform: scale(110%) translate(-50%, -50%);
     align-items: center;
     text-align: center;
+    width:max-content;
 }
 .logo {
     background-image: var(--logo);
