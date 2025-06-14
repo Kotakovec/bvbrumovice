@@ -194,7 +194,7 @@ body {
 .rstclr {
   color: revert;
 }
-@media (max-width: 600px) {
+@media (max-width: 982px) {
   .mainpagecontainer::after {
     content: "\A\A\A\A";
     white-space: pre;
