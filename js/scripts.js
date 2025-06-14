@@ -54,9 +54,12 @@ function rsrv_click() {
       <div id="response"></div>
     </form>
   </p>
-  <script src="/js/order.js"></script>
   `;
   showPopup(htmjtlm);
+  const script = document.createElement('script');
+  script.src = '/js/order.js';
+  script.type = 'text/javascript';
+  document.body.appendChild(script);
 }
 function uvodClick() {
   const html = `
