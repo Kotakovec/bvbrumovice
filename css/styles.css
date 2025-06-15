@@ -8,6 +8,7 @@ body {
     background: #1f1f1f;
     color: #f0f0f0;
     position: relative;
+    overflow:hidden;
 }
 html, body {
     margin: 0;
@@ -234,5 +235,9 @@ input {
   .center.top {
     position:relative;
     top: 32px;
+  }
+  .main {
+    top: 0;
+    transform: translateY(-50%);
   }
 }
