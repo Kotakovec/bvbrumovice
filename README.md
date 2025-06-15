@@ -7,5 +7,5 @@ It is used to showcase company apartmany u koleji.
 - Showcase OF apartmány u kolejí
 ## Creators of this website
 - MrTomiCZ
-- JPmanOF
--  Koťák
+- JPmanOF (did fucking nothing)
+- Koťák   (did fucking nothing)
