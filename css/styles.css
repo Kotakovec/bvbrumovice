@@ -246,4 +246,7 @@ input {
   .top-inner {
     zoom: 0.2;
   }
+  .mainpagecontainer {
+    zoom: 0.5;
+  }
 }
