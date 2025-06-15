@@ -219,11 +219,11 @@ input {
   color: revert;
 }
 @media (max-width: 1050px) {
-  .mainpagecontainer::after {
+  /*.mainpagecontainer::after {
     content: "\A\A\A\A";
     white-space: pre;
     display: block;
-  }
+  }*/
   .qr {
     display: none;
   }

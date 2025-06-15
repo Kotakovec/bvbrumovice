@@ -34,8 +34,13 @@ img.onload = function () {
   logo.style.height = img.height + 'px';
 };
 
-if (window.innerWidth < 600) {
+if (window.innerWidth < 1050) {
   showPopup("<h1>VAROVÁNÍ!! STRÁNKA NEMÁ ZATÍM PODPORU PRO MOBILNÍ ZAŘÍZENÍ!!!</h1>")
+  const containers = document.querySelectorAll('.mainpagecontainer');
+  containers.forEach(container => {
+    const br = document.createElement('br');
+    container.parentNode.insertBefore(br, container.nextSibling);
+  });
 }
 
 
