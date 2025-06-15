@@ -218,10 +218,13 @@ input {
 .rstclr {
   color: revert;
 }
-@media (max-width: 982px) {
-  .mainpagecontainer::after {
+@media (max-width: 1050px) {
+  /*.mainpagecontainer::after {
     content: "\A\A\A\A";
     white-space: pre;
     display: block;
+  }*/
+  .qr {
+    display: none;
   }
 }
