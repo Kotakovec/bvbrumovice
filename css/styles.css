@@ -156,8 +156,8 @@ input {
     align-items: center;
     justify-content: center;
 
-    height: 215px;
-    width: 215px;
+    height: 250px;
+    width: 250px;
 
     overflow: hidden;
     text-overflow: ellipsis;
