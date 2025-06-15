@@ -227,4 +227,10 @@ input {
   .qr {
     display: none;
   }
+  .center.bottom {
+    bottom: 32px;
+  }
+  .center.top {
+    top: 32px;
+  }
 }
