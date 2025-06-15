@@ -23,6 +23,11 @@ fetch("https://apartmanyukoleji.vercel.app/paid.bool")
   .catch(err => {
     console.error("Failed to fetch payment status:", err);
   });
+window.onresize(() => {
+  const elem = document.querySelector('.rootelem');
+  const height = elem.scrollHeight;
+  elem.style.clipPath = `polygon(0 0, 100% 0, 100% ${height}px, 0 ${height * 0.9}px)`;
+});
 
 
 
@@ -44,7 +49,6 @@ if (window.innerWidth < 1050) {
     }
   });
 }
-
 
 function rsrv_click() {
   const htmjtlm = `
