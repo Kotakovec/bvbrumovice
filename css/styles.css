@@ -1,5 +1,6 @@
 :root {
-    --logo: url('/images/logo.png');
+    --logo: url('/images/logotp.png');
+    --logobg: url('/images/logo.png');
     --pozadi: url('/images/pozadi.jpg');
 }
 body {
