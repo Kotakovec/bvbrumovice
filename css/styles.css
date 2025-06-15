@@ -237,7 +237,8 @@ input {
     top: 32px;
   }
   .main {
-    top: 0;
-    transform: translateY(-50%);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
