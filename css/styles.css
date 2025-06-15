@@ -128,7 +128,7 @@ input {
     text-align: center;
 }
 .top-inner {
-    transform: scale(0.5);
+    zoom: 0.5;
     transform-origin: top center;
 }
 .center {
