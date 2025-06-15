@@ -39,6 +39,7 @@ if (window.innerWidth < 1050) {
   const containers = document.querySelectorAll('.mainpagecontainer');
   containers.forEach(container => {
     const br = document.createElement('br');
+    for (const i = 0; i < 5; i++)
     container.parentNode.insertBefore(br, container.nextSibling);
   });
 }
