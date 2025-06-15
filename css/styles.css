@@ -16,8 +16,8 @@ html, body {
     height: 100%;
 }
 .rootelem {
-    /* height: 100%;
-    aspect-ratio: 16 / 9 */
+    height: 100%;
+    /*aspect-ratio: 16 / 9 */
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
 }
 .rootelem {
