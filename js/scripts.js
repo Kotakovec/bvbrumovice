@@ -83,11 +83,13 @@ function contactclick() {
   const html = `
   <p>
 <h1>Kontakt</h1>
+<a href="https://mapy.com/s/fuzumapaze">
 Apartmány u kolejí
 <br>
 Nádražní 502/86
 <br>
 691 72 Klobouky u Brna
+</a>
 <br>
 <a href="tel:+420739047640">+420 739 047 640</a>
 <br>
@@ -95,7 +97,7 @@ Email: bude
 <br>
 WWW / Webové stránky: bude
 <br>
-GPS: 48.9931569N, 16.8867883E
+GPS: <a href="https://mapy.com/s/fuzumapaze">48.9931569N, 16.8867883E</a>
 <br>
 Mapa: <a href="https://mapy.com/s/fuzumapaze">https://mapy.com/s/fuzumapaze</a>
   </p>
