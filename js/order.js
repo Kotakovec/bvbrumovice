@@ -23,7 +23,6 @@ const formatCzechDate = (dateStr) => {
   const [day, month, year] = dateStr.split('/');
   return `${parseInt(day)}. ${months[parseInt(month) - 1]} ${year}`;
 };
-for (listnr in getEventListeners()) form.removeEventListener(listnr);
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
   const formData = new FormData(form);
