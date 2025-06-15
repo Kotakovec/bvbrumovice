@@ -91,7 +91,7 @@ Nádražní 502/86
 691 72 Klobouky u Brna
 </a>
 <br>
-<a href="tel:+420739047640">+420 739 047 640</a>
+Telefonní číslo: <a href="tel:+420739047640">+420 739 047 640</a>
 <br>
 Email: bude
 <br>
