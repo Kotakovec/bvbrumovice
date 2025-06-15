@@ -57,7 +57,7 @@ function rsrv_click() {
   `;
   showPopup(htmjtlm);
   const scrtips = [];
-  for (const child of document.body.children) if (child.tagName === "SCRIPT" && child.src === "/js/order.js") scrtips.push(child);
+  for (const child of document.body.children) if (child.tagName === "SCRIPT" && child.src.endsWith("/js/order.js")) scrtips.push(child);
   if (scrtips.length === 0) {
     const script = document.createElement('script');
     script.src = '/js/order.js';
