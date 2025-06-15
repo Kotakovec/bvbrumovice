@@ -23,11 +23,14 @@ fetch("https://apartmanyukoleji.vercel.app/paid.bool")
   .catch(err => {
     console.error("Failed to fetch payment status:", err);
   });
-window.onresize(() => {
+function calcClip() {
   const elem = document.querySelector('.rootelem');
   const height = elem.scrollHeight;
   elem.style.clipPath = `polygon(0 0, 100% 0, 100% ${height}px, 0 ${height * 0.9}px)`;
-});
+};
+window.onresize = () => {
+  calcClip();
+};
 
 
 
@@ -38,6 +41,7 @@ img.onload = function () {
   logo.style.width = img.width + 'px';
   logo.style.height = img.height + 'px';
 };
+calcClip();
 
 if (window.innerWidth < 1050) {
   showPopup("<h1>VAROVÁNÍ!! STRÁNKA NEMÁ ZATÍM PODPORU PRO MOBILNÍ ZAŘÍZENÍ!!!</h1>")
