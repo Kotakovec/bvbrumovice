@@ -8,4 +8,4 @@ It is used to showcase company apartmany u koleji.
 ## Creators of this website
 - MrTomiCZ
 - JPmanOF (did fucking nothing)
-- Koťák   (did fucking nothing)
+- Koťák   (did atleatst something)
