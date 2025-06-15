@@ -15,7 +15,7 @@ flatpickr("input[type='date']", {
 try {
   var form = document.getElementById('orderForm');
 } catch {
-  console.log('rezervacni okno bylo otevreno vic jak jednou, js hodil error s deklarovanim promenny, ale toto je trycatch tak fixd');
+  //console.log('rezervacni okno bylo otevreno vic jak jednou, js hodil error s deklarovanim promenny, ale toto je trycatch tak fixd');
 }
 //const responseDiv = document.getElementById('response');
 const formatCzechDate = (dateStr) => {
