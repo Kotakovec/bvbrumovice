@@ -12,13 +12,9 @@ flatpickr("input[type='date']", {
     }
   }
 });
-try {
-  var form = document.getElementById('orderForm');
-} catch {
-  //console.log('rezervacni okno bylo otevreno vic jak jednou, js hodil error s deklarovanim promenny, ale toto je trycatch tak fixd');
-}
+const form = document.getElementById('orderForm');
 //const responseDiv = document.getElementById('response');
-try { var formatCzechDate = (dateStr) => {
+const formatCzechDate = (dateStr) => {
   if (!dateStr) return '';
   const months = [
     'leden', 'únor', 'březen', 'duben', 'květen', 'červen',
@@ -27,7 +23,7 @@ try { var formatCzechDate = (dateStr) => {
   const [day, month, year] = dateStr.split('/');
   return `${parseInt(day)}. ${months[parseInt(month) - 1]} ${year}`;
 };
-} catch {}
+for (listnr in getEventListeners()) form.removeEventListener(listnr);
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
   const formData = new FormData(form);
