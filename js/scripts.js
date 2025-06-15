@@ -44,7 +44,7 @@ img.onload = function () {
 // calcClip();
 
 if (window.innerWidth < 1050) {
-  showPopup("<h1>VAROVÁNÍ!! STRÁNKA NEMÁ ZATÍM PODPORU PRO MOBILNÍ ZAŘÍZENÍ!!!</h1>")
+  //showPopup("<h1>VAROVÁNÍ!! STRÁNKA NEMÁ ZATÍM PODPORU PRO MOBILNÍ ZAŘÍZENÍ!!!</h1>")
   const containers = document.querySelectorAll('.mainpagecontainer');
   containers.forEach(container => {
     //for (var i = 0; i < 5; i++) {
