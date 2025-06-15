@@ -228,9 +228,11 @@ input {
     display: none;
   }
   .center.bottom {
+    position:relative;
     bottom: 32px;
   }
   .center.top {
+    position:relative;
     top: 32px;
   }
 }
