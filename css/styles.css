@@ -35,7 +35,7 @@ html, body {
 }
 body {
     background-image: var(--pozadi);
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: cover;
     background-position: center;
 
