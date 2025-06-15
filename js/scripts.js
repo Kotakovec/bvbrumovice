@@ -38,7 +38,7 @@ if (window.innerWidth < 1050) {
   showPopup("<h1>VAROVÁNÍ!! STRÁNKA NEMÁ ZATÍM PODPORU PRO MOBILNÍ ZAŘÍZENÍ!!!</h1>")
   const containers = document.querySelectorAll('.mainpagecontainer');
   containers.forEach(container => {
-    for (const i = 0; i < 5; i++) {
+    for (var i = 0; i < 5; i++) {
     const br = document.createElement('br');
     container.parentNode.insertBefore(br, container.nextSibling);
     }
