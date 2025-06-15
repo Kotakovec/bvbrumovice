@@ -35,7 +35,7 @@ html, body {
 }
 body {
     background-image: var(--pozadi);
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 
@@ -242,5 +242,8 @@ input {
     left: 50%;
     top: 25%;
     transform: translateX(-50%);
+  }
+  .top-inner {
+    zoom: 0.2;
   }
 }
