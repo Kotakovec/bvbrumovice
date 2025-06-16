@@ -38,8 +38,14 @@ form.addEventListener('submit', async (e) => {
     const res = await fetch("https://aukapi.onrender.com/order?usr=mailer&pwd=mailer&to=mrtomicz@email.cz&" + params.toString());
     const data = await res.json();
     //responseDiv.textContent = `Stav: ${data.status}`;
+    if (data.status == "ok") {
+      showPopup('Zarezervováno!')
+    } else {
+      alert("chyba při rezervování, prosím rezervujte přes telefonní číslo nebo E-mail")
+    }
   } catch (error) {
     //responseDiv.textContent = 'Chyba při odesílání požadavku.';
     console.error(error);
+    alert("chyba při rezervování, prosím rezervujte přes telefonní číslo nebo E-mail")
   }
 });
